@@ -12,6 +12,7 @@
 		5C37CE2621CC2CCE00A74F3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C37CE2421CC2CCE00A74F3C /* Main.storyboard */; };
 		5C37CE2821CC2CD100A74F3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C37CE2721CC2CD100A74F3C /* Assets.xcassets */; };
 		5C37CE2B21CC2CD200A74F3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C37CE2921CC2CD200A74F3C /* LaunchScreen.storyboard */; };
+		5C37CE3421CC3E4400A74F3C /* bensound-ukulele.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5C37CE3321CC3E4400A74F3C /* bensound-ukulele.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		5C37CE2721CC2CD100A74F3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C37CE2A21CC2CD200A74F3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C37CE2C21CC2CD200A74F3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C37CE3321CC3E4400A74F3C /* bensound-ukulele.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bensound-ukulele.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +62,17 @@
 				5C37CE2721CC2CD100A74F3C /* Assets.xcassets */,
 				5C37CE2921CC2CD200A74F3C /* LaunchScreen.storyboard */,
 				5C37CE2C21CC2CD200A74F3C /* Info.plist */,
+				5C37CE3221CC3E3100A74F3C /* Music Files */,
 			);
 			path = UserDefaults;
+			sourceTree = "<group>";
+		};
+		5C37CE3221CC3E3100A74F3C /* Music Files */ = {
+			isa = PBXGroup;
+			children = (
+				5C37CE3321CC3E4400A74F3C /* bensound-ukulele.mp3 */,
+			);
+			path = "Music Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +133,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C37CE3421CC3E4400A74F3C /* bensound-ukulele.mp3 in Resources */,
 				5C37CE2B21CC2CD200A74F3C /* LaunchScreen.storyboard in Resources */,
 				5C37CE2821CC2CD100A74F3C /* Assets.xcassets in Resources */,
 				5C37CE2621CC2CCE00A74F3C /* Main.storyboard in Resources */,

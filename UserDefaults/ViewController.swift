@@ -22,13 +22,26 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if playMusic == true {
-            playSong()
-        } else if playMusic == false {
-            return
-        }
+        playMusic = defaults.bool(forKey: "Music Enabled?")
+        
+        updateMusic()
     }
 
+    @IBAction func musicButtonPressed(_ sender: Any) {
+        playMusic = !playMusic
+        updateMusic()
+        defaults.set(playMusic, forKey: "Music Enabled?")
+    }
+    
+    func updateMusic() {
+        if playMusic == true {
+            playSong()
+            musicButton.setTitle("Music: ON", for: .normal)
+        } else if playMusic == false {
+            player?.stop()
+            musicButton.setTitle("Music: OFF", for: .normal)
+        }
+    }
 
     func playSong() {
         let soundURL = Bundle.main.url(forResource: "bensound-ukulele", withExtension: "mp3")
@@ -41,5 +54,6 @@ class ViewController: UIViewController {
         
         player?.play()
     }
+    
 }
 
